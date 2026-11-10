@@ -1,0 +1,61 @@
+<!-- 
+  Name: Maheen Adil
+  Roll Number: i263081
+  Section: se-b
+  Lab 11: HTML, CSS and JavaScript - Contact Us Page
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Corner Dhaba - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Chai Corner Dhaba</h1>
+        <p>Welcome to our CHAI DHABA</p>
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="contact.html" class="nav-link active">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="content-card">
+            <h2>Contact Details</h2>
+            <p><strong>Address:</strong> Main Campus Street, Chai Corner, Sector E</p>
+            <p><strong>Phone:</strong> +92 300 1234567</p>
+            <p><strong>Opening Hours:</strong> 7:00 AM - 12:00 AM (Everyday)</p>
+        </section>
+
+        <section class="content-card">
+            <h2>Send Us a Message</h2>
+            <form onsubmit="sendMessage(event)" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" rows="4" required placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="order-btn">Submit Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function sendMessage(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            alert("Thank you, " + name + "! Your message has been sent successfully.");
+            document.querySelector('.contact-form').reset();
+        }
+    </script>
+
+</body>
+</html>
