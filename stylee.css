@@ -1,0 +1,194 @@
+/* 
+  Name: Maheen Adil
+  Roll Number: i263081
+  Section: SE-B
+  Lab 11: CSS Styling Rules
+*/
+
+body {
+    background-color: #fafafa;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 30px 20px 15px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #ecf0f1;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #9b00a0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.banner {
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #000000;
+}
+
+.menu-section h2 {
+    color: #000000;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-table th,
+.menu-table td {
+    padding: 12px 15px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.menu-table th {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.menu-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.action-section {
+    margin: 20px 0 40px 0;
+}
+
+.order-btn {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #9b00a0;
+}
+
+/* Card layout for subpages */
+.content-card {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.content-card h2 {
+    text-align: center;
+    color: #000000;
+    margin-top: 0;
+}
+
+.info-list {
+    line-height: 1.8;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    background-color: #ffffff;
+}
+
+/* Review styling */
+.review-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 0;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: #f39c12;
+    font-weight: bold;
+}

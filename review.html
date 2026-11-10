@@ -1,0 +1,93 @@
+<!-- 
+  Name: Maheen Adil
+  Roll Number: I263081
+  Section: SE-B
+  Lab 11: HTML, CSS and JavaScript - Customer Reviews
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Corner Dhaba - Customer Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Chai Corner Dhaba</h1>
+        <p>Welcome to our CHAI DHABA</p>
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="reviews.html" class="nav-link active">Reviews</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="content-card">
+            <h2>Customer Reviews</h2>
+            
+            <div class="review-item">
+                <div class="review-header">
+                    <strong>Ali Raza</strong>
+                    <span class="rating">★★★★★</span>
+                </div>
+                <p>"Best Karak Chai in town! The Elaichi Chai with Aloo Paratha is an unmatched combination."</p>
+            </div>
+
+            <div class="review-item">
+                <div class="review-header">
+                    <strong>Sara Khan</strong>
+                    <span class="rating">★★★★☆</span>
+                </div>
+                <p>"Loved the quick service and authentic dhaba atmosphere. The Doodh Patti is spot on."</p>
+            </div>
+
+            <div class="review-item">
+                <div class="review-header">
+                    <strong>Usman Ahmed</strong>
+                    <span class="rating">★★★★★</span>
+                </div>
+                <p>"Crispy samosas and steaming hot tea. A great spot to hang out after classes!"</p>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2>Leave a Review</h2>
+            <form onsubmit="addReview(event)" class="contact-form">
+                <div class="form-group">
+                    <label for="reviewer-name">Your Name:</label>
+                    <input type="text" id="reviewer-name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="rating-select">Rating:</label>
+                    <select id="rating-select" required>
+                        <option value="★★★★★">5 Stars (★★★★★)</option>
+                        <option value="★★★★☆">4 Stars (★★★★☆)</option>
+                        <option value="★★★☆☆">3 Stars (★★★☆☆)</option>
+                        <option value="★★☆☆☆">2 Stars (★★☆☆☆)</option>
+                        <option value="★☆☆☆☆">1 Star (★☆☆☆☆)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review-text">Your Review:</label>
+                    <textarea id="review-text" rows="3" required placeholder="Share your experience..."></textarea>
+                </div>
+                <button type="submit" class="order-btn">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function addReview(event) {
+            event.preventDefault();
+            const name = document.getElementById('reviewer-name').value;
+            alert("Thank you, " + name + "! Your review has been submitted.");
+            document.querySelector('.contact-form').reset();
+        }
+    </script>
+
+</body>
+</html>
