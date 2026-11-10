@@ -1,7 +1,7 @@
 <!-- 
   Name: [Your Full Name]
-  Roll Number: [Your Roll Number, e.g., i251234]
-  Section: [Your Section, e.g., Section E]
+  Roll Number: [Your Roll Number]
+  Section: [Your Section]
   Lab 11: HTML, CSS and JavaScript - Task 2 & 3
 -->
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chai Corner Dhaba Menu</title>
+    <title>Chai Corner Dhaba - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,6 +17,11 @@
     <header class="header">
         <h1>Chai Corner Dhaba</h1>
         <p>Welcome to our CHAI DHABA</p>
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+        </nav>
     </header>
 
     <main class="container">
@@ -25,7 +30,6 @@
             <img src="1.jpg" alt="Hot cup of Karak Chai" class="hero-image">
         </section>
 
-     
         <section class="menu-section">
             <h2>Our Special Menu</h2>
             <table class="menu-table">
@@ -61,19 +65,14 @@
             </table>
         </section>
 
-     
         <section class="action-section">
             <button class="order-btn" onclick="placeOrder()">Order Chai</button>
         </section>
     </main>
 
-
     <script>
         function placeOrder() {
-         
             console.log("Order button was clicked: Doodh Patti order initiated.");
-            
-         
             window.alert("Your Karak Chai order has been successfully placed! Enjoy your meal.");
         }
     </script>
