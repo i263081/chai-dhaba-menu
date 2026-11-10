@@ -38,6 +38,7 @@ body {
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -160,11 +161,34 @@ body {
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea,
+.form-group select {
     width: 100%;
     padding: 10px;
     border: 1px solid #000000;
     border-radius: 4px;
     box-sizing: border-box;
     font-family: inherit;
+    background-color: #ffffff;
+}
+
+/* Review styling */
+.review-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 0;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: #f39c12;
+    font-weight: bold;
 }
