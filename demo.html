@@ -1,0 +1,81 @@
+<!-- 
+  Name: [Your Full Name]
+  Roll Number: [Your Roll Number, e.g., i251234]
+  Section: [Your Section, e.g., Section E]
+  Lab 11: HTML, CSS and JavaScript - Task 2 & 3
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Corner Dhaba Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Chai Corner Dhaba</h1>
+        <p>Welcome to our CHAI DHABA</p>
+    </header>
+
+    <main class="container">
+    
+        <section class="banner">
+            <img src="1.jpg" alt="Hot cup of Karak Chai" class="hero-image">
+        </section>
+
+     
+        <section class="menu-section">
+            <h2>Our Special Menu</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Category</th>
+                        <th>Price (PKR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Doodh Patti</td>
+                        <td>Hot Beverage</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Elaichi Chai</td>
+                        <td>Special Tea</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Aloo Paratha</td>
+                        <td>Breakfast</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Samosa (2 Pcs)</td>
+                        <td>Snacks</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+     
+        <section class="action-section">
+            <button class="order-btn" onclick="placeOrder()">Order Chai</button>
+        </section>
+    </main>
+
+
+    <script>
+        function placeOrder() {
+         
+            console.log("Order button was clicked: Doodh Patti order initiated.");
+            
+         
+            window.alert("Your Karak Chai order has been successfully placed! Enjoy your meal.");
+        }
+    </script>
+</body>
+</html>
